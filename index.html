@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <style>
+        .bmi-section {
+            border: 2px solid blueviolet;
+            background-color: pink;
+            max-width: 50%;
+            margin: 100px auto;
+            padding: 20px;
+
+        }
+
+        h1 {
+            color: black;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            text-align: center;
+            border-bottom: 2px solid blueviolet;
+            width: 75%;
+            margin: 20px auto;
+            padding-bottom: 20px;
+        }
+
+        label {
+            color: blueviolet;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 1.5rem;
+
+
+        }
+
+
+
+        .bmi-field {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            margin-bottom: 20px;
+        }
+
+        .bmi-field input[type="number"] {
+            padding: 10px 50px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid blueviolet;
+            margin-left: 20px;
+            font-size: 1.8rem;
+        }
+
+        .btn {
+            display: flex;
+            justify-content:flex-end;
+            margin-right: 80px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid blueviolet;
+            margin-left: 20px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="bmi-section">
+        <h1>Define Your BMI(Body Mass Index)</h1>
+        <div class="bmi-main">
+            <div class="bmi-field">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" name="" id="weight">
+            </div>
+            <div class="bmi-field">
+                <label for="height">Height (m)</label>
+                <input type="number" name="" id="height">
+            </div>
+        </div>
+        <div class="btn">
+            <div >
+
+                <button onclick="calculateBmi()">Submit</button>
+            </div>
+            <div>
+                <button onclick="reload()">Clear</button>
+            </div>
+        </div>
+        <p id="heading"></p>
+        <p id="bmi-output"></p>
+        <p id="message"></p>
+
+
+
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
